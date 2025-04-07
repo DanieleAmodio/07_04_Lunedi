@@ -1,19 +1,23 @@
-let num1=parseInt(prompt("inserisci il primo numero "))
-let num2=parseFloat(prompt("inserisci il secondo numero"))
-let risultato = operazione(num1,num2)
-console.log(risultato)
+let stringa=prompt("inserisci stringa ")
+let frase = upperfirst(stringa)
+console.log(frase)
 
-function operazione(val1,val2) {
-    let calcolo=0
-    switch (val1) {
-        case val2:
-            console.log("i valori inseriti sono uguali la loro somma sara moltiplicata per tre ")
-          calcolo= (val1+val2)*3
-        break; 
-        default:
-            console.log("i valori sono diversi")
-           calcolo=val1+val2
-        break;  
-    }
-      return calcolo
+function upperfirst(valore) {
+     let mod=""
+     let mod1pt=""
+     let resto=""
+     mod=valore.split(" ")
+     console.log(mod)
+     mod1pt=mod[0].split("")
+     console.log(mod1pt)
+     mod1pt=mod1pt[0].toUpperCase()
+     console.log(mod1pt)
+     resto=mod1pt.substring(1)
+     console.log(resto)
+     mod1pt+=resto
+      return mod1pt
 }
+
+/*function capitalizeWords(string) {
+  return string.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+};*/

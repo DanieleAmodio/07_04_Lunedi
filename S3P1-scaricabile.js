@@ -3,19 +3,67 @@
  La funzione deve ritornare la somma di quei due valori, ma se il loro valore è lo stesso allora deve ritornare la loro somma moltiplicata per 3.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let num1=parseInt(prompt("inserisci il primo numero "))
+let num2=parseFloat(prompt("inserisci il secondo numero"))
+let risultato = crazySum(num1,num2)
+console.log(risultato)
+
+function crazySum(val1,val2) {
+    let calcolo=0
+    switch (val1) {
+        case val2:
+            console.log("i valori inseriti sono uguali la loro somma sara moltiplicata per tre ")
+          calcolo= (val1+val2)*3
+        break; 
+        default:
+            console.log("i valori sono diversi")
+           calcolo=val1+val2
+        break;  
+    }
+      return calcolo
+}
+ */
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "boundary", che accetta un numero intero come parametro e ritorna true se tale parametro è incluso tra 20 e 100 (incluso) o se è esattamente uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let num1=parseInt(prompt("inserisci il numero "))
+let risultato = boundary(num1)
+console.log(risultato)
+
+function boundary(val1) {
+    let esito = false
+    if(val1>20 && val1<100) {
+        esito=true
+        console.log(`il valore inserito ${val1} è compreso tra 20 e 100 `)
+    } else if(val1===400) {
+        esito=true
+        console.log(`il valore inserito ${val1} è uguale a 400 `)
+    } else {
+      console.log(`il valore inserito ${val1} non e compreso nelle condizioni richieste  `)
+    } 
+      return esito
+}
+*/
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let parola=prompt("inserisci la parola da invertire ")
+let parolaInvertita = reverseString(parola)
+console.log(parolaInvertita)
+
+function reverseString(valore) {
+     let inversione= valore.split("")
+     console.log(inversione)
+     inversione= inversione.reverse()
+     console.log(inversione)
+     inversione= inversione.join("")
+      return inversione
+}
+ */
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.

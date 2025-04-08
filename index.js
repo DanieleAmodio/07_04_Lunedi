@@ -1,23 +1,19 @@
-let stringa=prompt("inserisci stringa ")
+/*let stringa=prompt("inserisci stringa ")
 let frase = upperfirst(stringa)
 console.log(frase)
 
 function upperfirst(valore) {
-     let mod=""
-     let mod1pt=""
-     let resto=""
-     mod=valore.split(" ")
-     console.log(mod)
-     mod1pt=mod[0].split("")
-     console.log(mod1pt)
-     mod1pt=mod1pt[0].toUpperCase()
-     console.log(mod1pt)
-     resto=mod1pt.substring(1)
-     console.log(resto)
-     mod1pt+=resto
-      return mod1pt
-}
+    return valore.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+  };*/   
+
 
 /*function capitalizeWords(string) {
   return string.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
 };*/
+
+function controllaemail(stringa) {
+  let valore = /.*@.*\..*/
+  return valore.test(stringa)
+}
+let risultato=controllaemail("stringa@outlook.com")
+console.log(risultato)
